@@ -144,15 +144,15 @@ public class Main {
 
 	}
 
-	public static Student findStudentById(String studentId) {
-		Student result = null;
-		try {
-			result = studentList.stream().filter(x -> x.getStudentId().equalsIgnoreCase(studentId)).findAny()
-					.orElseThrow(() -> new RuntimeException("No Data found!!!"));
-		} catch (Exception e) {
-			System.out.println("Student with ID " + studentId + " not found!!!");
-		}
-		return result;
-	}
+	// public static Student findStudentById(String studentId) {
+	// 	Student result = null;
+	// 	try {
+	// 		result = studentList.stream().filter(x -> x.getStudentId().equalsIgnoreCase(studentId)).findAny()
+	// 				.orElseThrow(() -> new RuntimeException("No Data found!!!"));
+	// 	} catch (Exception e) {
+	// 		System.out.println("Student with ID " + studentId + " not found!!!");
+	// 	}
+	// 	return result;
+	// }
 
 }
